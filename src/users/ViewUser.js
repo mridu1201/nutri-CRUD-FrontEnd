@@ -2,6 +2,8 @@ import axios from 'axios';
 import React, { useEffect } from 'react'
 import { useParams,Link} from 'react-router-dom'
 import { useState } from 'react';
+import HomeIcon from '@mui/icons-material/Home';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
 const ViewUser = () => {
 
@@ -31,7 +33,7 @@ const ViewUser = () => {
 
           <div className="card">
             <div className="card-header">
-              Details of Food id : 
+              Details of Food id : {user.foodID}
               <ul className="list-group list-group-flush">
                 <li className="list-group-item">
                   <b>Food:</b> {user.name}
@@ -48,8 +50,8 @@ const ViewUser = () => {
               </ul>
             </div>
           </div>
-          <Link className="btn btn-primary my-2" to={"/"}>
-            Back to Home
+          <Link className="btn btn-info my-2" to={"/"}>
+            <ArrowBackIcon style={{color:'white'}}/><HomeIcon style={{color:'white'}}/>
           </Link>
         </div>
       </div>

@@ -65,6 +65,8 @@ const Home = () => {
    
   </tbody>
 </table>
+
+
     </div>
   )
 }
